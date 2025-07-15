@@ -9,6 +9,9 @@
     color: #006400;
     text-decoration: none;
     }
+    .inline-block{
+    display: inline-block;
+    }
     a:hover {
     color: #800000;
     text-decoration: underline;
@@ -39,6 +42,7 @@
     margin-bottom: 10px;
    }
    .block-name {
+    font-family: 'Arial', 'Verdana', sans-serif;
     font-size: 32px;
     margin-left: 35px;
     color: #800000;
@@ -56,11 +60,11 @@
 	box-shadow: 0 0 10px 1px black;
     }
     .yandex-map {
-    width: max-content;
-    height: max-content;
-    position: relative;
-    margin-bottom: 10px;
-    margin-left: 10px;
+        width: max-content;
+        height: max-content;
+        position: relative;
+        margin-bottom: 10px;
+        margin-left: 10px;
     }
     .tg-bot-info-image {
         width: auto;
@@ -118,9 +122,23 @@
     .intercom-image {
         width: auto;
         height: auto;
-        margin-left: 400px;
-        margin-bottom: 40px;
+        float: right;
         position: relative;
+    }
+    .picture-1 {
+        width: auto;
+        height: auto;
+        float: right;
+        margin-right: 25px;
+    }
+    .buttons-list {
+        margin-top: 15px;
+    }
+    .main-text-local-1 {
+        font-size: 30px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
 </style>
     <head>
@@ -146,7 +164,7 @@
     </div>
     <hr class="hr-washed">
     <h2 id="about"></h2>
-    <div class="block-name">• Наша деятельность</div>
+    <div class="block-name"><strong>• Наша деятельность</strong></div>
     <div class="main-text">
         ∗ Обслуживание, ремонт, монтаж любой сложности <br>
         ∗ Установка IP-домофона (Умный домофон) <br>
@@ -155,24 +173,31 @@
     </div>
     <hr class="hr-washed">
     <h2 id="contacts"></h2>
-    <div class="block-name">• Контактная информация</div>
+    <div class="block-name"><strong>• Контактная информация</strong></div>
     <div class="main-text"> ∗ Тел. +7(495)596-16-03 <br>
             ∗&nbsp<a href="mailto:5961603@mail.ru" style="color: black">E-mail: 5961603@mail.ru</span></a><br>
             ∗ Адрес: г. Одинцово, ул. Маршала Жукова д.34 п.3<br>
             ∗ Время работы: пн-пт 9:00-18:00, 
             перерыв 13:00-14:00 <br>
-    </div>
-    <div class="yandex-map">
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ada32a343d8851a9c18942a60fadfefe78cb1fe6f11d765489dcc4a6bc38d4302&amp;width=550&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
+    <div class="yandex-map" id="mymap">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ada32a343d8851a9c18942a60fadfefe78cb1fe6f11d765489dcc4a6bc38d4302&amp;width=550&amp;height=450&amp;lang=ru_RU&amp;scroll=true;id=mymap"></script>
     </div>
     <hr class="hr-washed">
     <h2 id="smart-intercom"></h2>
-    <div class="block-name">• Умный домофон</div>
-    <div class="main-text"> 
-        По заявке собственников установим бесплатно оборудование, обеспечим ключами для доступа в подъезд, предоставим доступ к бесплатному
-        Web-приложению для просмотра видео
-    </div>    
-    <div>
+    <div class="block-name"><strong>• Умный домофон</strong></div>
+    <div class="inline-block">
+    <div class="main-text-local-1">
+        <img class="picture-1" src="assets/pict-1.png">
+        Предлагаем Вам, собственникам квартир, обратиться к нам для установки нового 
+        Умного домофона. Все квартирные переговорные устройства сохранят свою работоспособность, мы Вас обеспечим
+         ключами для новПредлагаем Вам, собственникам квартир, обратиться к нам для установки нового 
+        Умного домофона. Все квартирные переговорные устройства сохранят свою работоспособность, мы Вас обеспечим
+         ключами для новПредлагаем Вам, собственникам квартир, обратиться к нам для установки нового 
+        Умного домофона. Все квартирные переговорные устройства сохранят свою работоспособность, мы Вас обеспечим
+         ключами для нов
+    </div>
+    </div>
+    <div class="buttons-list">
         <img class="download-button" src="assets/google-download.png" />
         <a href="https://play.google.com/store/apps/details?id=sputnik.axmor.com&hl=ru">
         </a><br>
@@ -182,9 +207,9 @@
         <a href="https://appgallery.huawei.com/#/app/C102324535">
             <img class="download-button" src="assets/huawei-download.png" />
         </a>
-    </div>ы
+    </div>
     <h2 id="send-message"></h2>
-    <div class="block-name">• Как можно отправить нам сообщение онлайн?</div>
+    <div class="block-name"><strong>• Как можно отправить нам сообщение онлайн?</strong></div>
     <div class="main-text"> 
         ∗ Telegram-бот: Перейдите по <a href="https://t.me/dmfn_serv_odi_ask_bot" style="color: #1E90FF">ссылке</a> и следуйте инструкциям бота.<br>
         <img class="tg-bot-info-image" src="assets/tgbotinfo.png"/>

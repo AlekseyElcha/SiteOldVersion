@@ -8,24 +8,26 @@
      a {
     color: #006400;
     text-decoration: none;
-   }
-   a:hover {
+    }
+    a:hover {
     color: #800000;
     text-decoration: underline;
-   }
+    }
+    a .ca:hover {
+	text-decoration:underline;
+    }
    .menu {
     list-style: none;
-    display: flex;
     background-color: #ababab;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
    }
    .menu-bar-first {
-    font-size: 32px;
-    margin-left: 5px;
+    font-size: 30px;
+    margin-left: 40px;
    }
    .menu-bar {
-    font-size: 32px;
-    margin-left: 20px;
+    font-size: 30px;
+    margin-left: 40px;
    }
    menu:hover {
     color: #800000;
@@ -33,7 +35,8 @@
    }
    .main-text {
     font-size: 30px;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
    }
    .block-name {
     font-size: 32px;
@@ -41,35 +44,209 @@
     color: #800000;
    }
    .logo {
-    width: 150px;
-    height: 150px;
+    width: 172px;
+    height: 172px;
     float: right;
-    margin-left:10px;
    }
+   .hr-washed {
+	margin: 20px 0;
+	padding: 0;
+	height: 0;
+	border: none;
+	box-shadow: 0 0 10px 1px black;
+    }
+    .yandex-map {
+    width: max-content;
+    height: max-content;
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    }
+    .tg-bot-info-image {
+        width: auto;
+        height: auto;
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+    .tg-bot-info-image-1 {
+        width: 250px;
+        height: 550px;
+        margin-left: 30px;
+        margin-top: 15px;
+        border: #006400 solid 1px;
+        position: relative;
+    }
+    .tg-bot-info-image-2 {
+        width: 250px;
+        height: 550px;
+        margin-left: 40px;
+        margin-top: 15px;
+        border: #006400 solid 1px;
+        position: relative;
+    }
+    .tg-bot-info-image-android {
+        width: 250px;
+        height: 550px;
+        margin-left: 30px;
+        margin-top: 15px;
+        border: #006400 solid 1px;
+        position: relative;
+    }
+    .tg-bot-info-pc {
+        width: 885px;
+        height: 400px;
+        margin-left: 30px;
+        margin-top: 15px;
+        border: #006400 solid 1px;
+        position: relative;
+    }
+    .tg-bot-info-pc-1 {
+        width: 885px;
+        height: 200px;
+        margin-left: 30px;
+        margin-top: 15px;
+        border: #006400 solid 1px;
+        position: relative;
+    }
+    .download-button {
+        width: 300px;
+        height: 100px;
+        margin-left: 30px;
+        margin-top: 15px;
+        position: relative;
+    }
+    .intercom-image {
+        width: auto;
+        height: auto;
+        margin-left: 400px;
+        margin-bottom: 40px;
+        position: relative;
+    }
 </style>
     <head>
         <title>
-           «Домофон-сервис в г.Одинцово»
+           «Домофон-сервис» в г.Одинцово
         </title>
     </head>
 <body>
     <body style="background: url(assets/bk1.jpg); background-size: 1920px 1400px; background-repeat: repeat"></body>
     <img class="logo" src="assets/logo.png"/>
 	<ul class="menu">
-		<li><a class="menu-bar-first" href="#about">Наша деятельность</a></li>
-		<li><a class="menu-bar" href="#contacts">Контактная информация</a></li>
-		<li><a class="menu-bar" href="#smart-intercom">Умный домофон</a></li>
-        <li><a class="menu-bar" href="#send-message">Отправить сообщение</a></li>
-        <li><a class="menu-bar" href="#documents">Документы</a></li>
+		<li><a class="menu-bar-first" href="#about" style="text-decoration:none">• <span class="ca">Наша деятельность</span></a></li>
+		<li><a class="menu-bar" href="#contacts" style="text-decoration:none">• <span class="ca">Контактная информация</span></a></li>
+		<li><a class="menu-bar" href="#smart-intercom" style="text-decoration:none">• <span class="ca">Умный домофон</span></a></li>
+        <li><a class="menu-bar" href="#send-message" style="text-decoration:none">• <span class="ca">Отправить сообщение</span></a></li>
+        <li><a class="menu-bar" href="#documents" style="text-decoration:none">• <span class="ca">Договор по обслуживанию</span></a></li>
 	</ul>
     <div class="main-text">
-    Приветствуем Вас на сайте ООО«Домофон-сервис»! <br>
+    Добро пожаловать на обновлённый сайт ООО«Домофон-сервис»!<br>
     Мы обновили наш сайт, сделали его дизайн более приятным, а интерфейс интуитивно понятным.<br>По всем вопросам, 
     связанным с работой этого сайта пишите на эл.почту aleshus2007@gmail.com
-    <br><br>
+    <br>
     </div>
+    <hr class="hr-washed">
+    <h2 id="about"></h2>
     <div class="block-name">• Наша деятельность</div>
-    
+    <div class="main-text">
+        ∗ Обслуживание, ремонт, монтаж любой сложности <br>
+        ∗ Установка IP-домофона (Умный домофон) <br>
+        ∗ Домашний и подъездный домофон, квартирные переговорные устройства <br>
+        ∗ Видеонаблюдение, шлагбаумы, калитки. <br>
+    </div>
+    <hr class="hr-washed">
+    <h2 id="contacts"></h2>
+    <div class="block-name">• Контактная информация</div>
+    <div class="main-text"> ∗ Тел. +7(495)596-16-03 <br>
+            ∗&nbsp<a href="mailto:5961603@mail.ru" style="color: black">E-mail: 5961603@mail.ru</span></a><br>
+            ∗ Адрес: г. Одинцово, ул. Маршала Жукова д.34 п.3<br>
+            ∗ Время работы: пн-пт 9:00-18:00, 
+            перерыв 13:00-14:00 <br>
+    </div>
+    <div class="yandex-map">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ada32a343d8851a9c18942a60fadfefe78cb1fe6f11d765489dcc4a6bc38d4302&amp;width=550&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+    <hr class="hr-washed">
+    <h2 id="smart-intercom"></h2>
+    <div class="block-name">• Умный домофон</div>
+    <div class="main-text"> 
+        По заявке собственников установим бесплатно оборудование, обеспечим ключами для доступа в подъезд, предоставим доступ к бесплатному
+        Web-приложению для просмотра видео
+    </div>    
+    <div>
+        <img class="download-button" src="assets/google-download.png" />
+        <a href="https://play.google.com/store/apps/details?id=sputnik.axmor.com&hl=ru">
+        </a><br>
+        <a href="https://apps.apple.com/us/app/наш-дом/id1371300967?l=ru">
+            <img class="download-button" src="assets/ios-download.png" />
+        </a><br>
+        <a href="https://appgallery.huawei.com/#/app/C102324535">
+            <img class="download-button" src="assets/huawei-download.png" />
+        </a>
+    </div>ы
+    <h2 id="send-message"></h2>
+    <div class="block-name">• Как можно отправить нам сообщение онлайн?</div>
+    <div class="main-text"> 
+        ∗ Telegram-бот: Перейдите по <a href="https://t.me/dmfn_serv_odi_ask_bot" style="color: #1E90FF">ссылке</a> и следуйте инструкциям бота.<br>
+        <img class="tg-bot-info-image" src="assets/tgbotinfo.png"/>
+    </div>
+    <div class="main-text">
+    <details>
+        <summary>Нажмите, чтобы показать/скрыть подробную инструкцию по использованию Telegram-бота</summary>
+        <p>
+            <details name="instructions">
+            <summary>IOS</summary>
+            <p>
+                Инструкция для пользователей Android:<br>
+                1) Перейдите по <a href="https://t.me/dmfn_serv_odi_ask_bot" style="color: #1E90FF">ссылке</a>.<br>
+                2) Если браузер запросит переход в Telegram - разрешите ему это сделать. <br>
+                <div>
+                <img class="tg-bot-info-image-1" src="assets/tg-ios-redir.jpg"/>
+                <img class="tg-bot-info-image-2" src="assets/tg-ios.jpg"/>
+                </div><br>
+                3) После того, как откроется чат с ботом, нажмите на кнопку START или наберите и отправьте /start.<br>
+                4) Следуйте указаниям бота в чате.
+            </p>
+            </details>
+            <details name="instructions">
+            <summary>Android</summary>
+            <p>
+                Инструкция для пользователей Android:<br>
+                1) Перейдите по <a href="https://t.me/dmfn_serv_odi_ask_bot" style="color: #1E90FF">ссылке</a>.<br>
+                2) Если браузер запросит переход в Telegram - разрешите ему это сделать.
+                <div>
+                <img class="tg-bot-info-image-1" src="assets/tg-android-redir.jpg"/>
+                <img class="tg-bot-info-image-2" src="assets/tg-android.jpg"/>
+                </div><br>
+                3) После того, как откроется чат с ботом, нажмите на кнопку START или наберите и отправьте /start.<br>
+                4) Следуйте указаниям бота.
+            </p>
+            </details>
+            <details name="instructions">
+            <summary>ПК</summary>
+            <p>
+                Инструкция для Telegram Desktop и Telegram Web на компьютере:<br>
+                1) Перейдите по <a href="https://t.me/dmfn_serv_odi_ask_bot" style="color: #1E90FF">ссылке</a>.<br>
+                2) Откройте Telegram - в браузере (кнопка «Open in Web») или в приложении (открыть Telegram Desktop).
+                <div>
+                <img class="tg-bot-info-pc" src="assets/tg-web-redir-1.png"/>
+                <img class="tg-bot-info-pc" src="assets/tg-pc-redir-2.png"/>
+                </div><br>
+                3) Чтобы запустить бота, нажамите на кнопку «Меню» или «Menu», затем нажмите на «Запустить бота» или отправьте сообщение /start.
+                <div><img class="tg-bot-info-pc" src="assets/tg-pc-start.png"/></div><br>
+                4) Следуйте указаниям бота в чате. Важное примечание! Кнопки взаимодействия открываются по доп.кнопке справа!
+                <div><img class="tg-bot-info-pc-1" src="assets/tg-pc-extra.png"/></div><br>
+            </p>
+            </details>
+        </p>
+    </details>
+    </div>
+    <br>
+    <div class="main-text"> 
+        ∗ Google Forms (Гугл Формы). Заполните форму ниже и нажмите «Отправить».<br>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfVwGRTbYjcDCa8XrslD75mXqtfZTykXidh9y6yE_2m2ZrT5g/viewform?embedded=true" width="1000" height="1000" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+    </div><br>
+    <hr class="hr-washed">
 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>jvr
 </body>
 </html>
